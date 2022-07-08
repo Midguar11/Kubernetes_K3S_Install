@@ -18,6 +18,8 @@
      
 # worker1-2:
 
+- Connect to worker ssh
+
       curl -sfL https://get.k3s.io | K3S_URL=https://192.168.0.124:6443 K3S_TOKEN=K10ed sh -
 
 # Command:
