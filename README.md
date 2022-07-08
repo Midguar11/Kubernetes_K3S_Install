@@ -18,7 +18,7 @@
      
 # worker1-2:
 
-      curl -sfL https://get.k3s.io | K3S_URL=https://192.168.0.124:6443 K3S_TOKEN=K10edaa3e53481877fc240c79aa0b7b471a335e04fef3327985603c698d5a5f18c0::server:a2e743e0fdf9d8b6fbbbf3845c39e829 sh -
+      curl -sfL https://get.k3s.io | K3S_URL=https://192.168.0.124:6443 K3S_TOKEN=K10ed sh -
 
 # Command:
 
