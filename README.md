@@ -26,7 +26,7 @@ open port in router: yourkubermasterserverip:6443
 
       curl -sfL https://get.k3s.io | K3S_URL=https://192.168.0.124:6443 K3S_TOKEN=youtokennumberhere sh -
 
-# setup kube becefore use jenkins
+# setup kube before use jenkins
 
 
     kind create cluster --config jenkins-config.yaml
@@ -35,6 +35,7 @@ open port in router: yourkubermasterserverip:6443
     kubectl create serviceaccount jenkins --namespace=jenkins
     kubectl describe secret $(kubectl describe serviceaccount jenkins --namespace=jenkins | grep Token | awk '{print $2}') --namespace=jenkins
     kubectl create rolebinding jenkins-admin-binding --clusterrole=admin --serviceaccount=jenkins:jenkins --namespace=jenkins
+    echo "K3S_KUBECONFIG_MODE=\"644\"" >> /etc/systemd/system/k3s.service.env
 
 #  Install Nginx
 
