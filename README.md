@@ -142,7 +142,7 @@ https://www.youtube.com/watch?v=1hwGdey7iUU
 
   - nano /etc/ssh/sshd_config
 
-  UsePAM yes
+  UsePAM no
   PasswordAuthentication no
 
   restart
