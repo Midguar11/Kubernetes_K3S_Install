@@ -127,7 +127,8 @@ pipeline {
 - list of name space " sudo kubectl get ns "
 - cretae serviceuser is name Jenkins in jenkins namespace " kubectl create serviceaccount jenkins --namespace=jenkins "
 - create sercret "sudo kubectl describe secret $(kubectl describe serviceaccount jenkins --namespace=jenkins | grep Token | awk '{print $2}') --namespace=jenkins "
-- Jenkins user add admin role "sudo kubectl create rolebinding jenkins-admin-binding --clusterrole=admin --serviceaccount=jenkins:jenkins --namespace=jenkins "
+- Jenkins user add admin role "sudo kubectl create rolebinding jenkins-admin-binding --clusterrole=admin 
+- more info pods : " kubectl describe pod "
 
 # References
 
@@ -136,3 +137,12 @@ Thx for:
 https://www.youtube.com/watch?v=ZXaorni-icg&t=295s
 
 https://www.youtube.com/watch?v=1hwGdey7iUU
+
+# Kubermaster config ssh
+
+  - nano /etc/ssh/sshd_config
+
+  UsePAM yes
+  PasswordAuthentication no
+
+  restart
