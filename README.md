@@ -117,7 +117,7 @@ pipeline {
 - Cluster data: " cat /etc/rancher/k3s/k3s.yaml "
 - runing status kubernetes. " systemctl status k3s "
 - token: " cat /var/lib/rancher/k3s/server/node-token "
-- certificate are you need a jenkins crendetional: " sudo cat /etc/rancher/k3s/k3s.yaml "
+- certificate do you need a jenkins crendetional: " sudo cat /etc/rancher/k3s/k3s.yaml "
 - check deployed content " sudo kubectl get deployment "
 - " sudo kubectl get pods "
 - cluster ip and more " sudo kubectl get svc  "
