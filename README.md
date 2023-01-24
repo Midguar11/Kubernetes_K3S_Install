@@ -17,11 +17,11 @@ open port in router: yourkubermasterserverip:6443
 
 # Connect to Master ( ControlPLane server
 
-      curl -sfL https://get.k3s.io | sh -s - --disable traefik --write-kubeconfig-mode 644 --node-name k3sBala-master
+     curl -sfL https://get.k3s.io | sh -s - --disable traefik --write-kubeconfig-mode 644 --node-name k3sBala-master
       
 # Get the token
 
-      cat /var/lib/rancher/k3s/server/node-token
+     cat /var/lib/rancher/k3s/server/node-token
      
 # worker1-2:
 
