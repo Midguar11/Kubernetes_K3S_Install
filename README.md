@@ -1,4 +1,5 @@
 # kubernetes k3s install with script:
+( This work only master and your choose how many slave, it is work singel mode )
 
 - references: https://rancher.com/docs/k3s/latest/en/quick-start/
 
@@ -15,7 +16,7 @@
 
 open a port in the router: your kubermaster server: 6443
 
-# Connect to Master ( ControlPLane server
+# Connect to Master ( ControlPLane server )
 
      curl -sfL https://get.k3s.io | sh -s - --disable traefik --write-kubeconfig-mode 644 --node-name k3sBala-master
       
@@ -23,7 +24,7 @@ open a port in the router: your kubermaster server: 6443
 
      cat /var/lib/rancher/k3s/server/node-token
      
-# worker1-2:
+# Connect to worker1-2:
 
 - Connect to worker ssh
 
