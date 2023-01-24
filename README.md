@@ -31,6 +31,11 @@ open a port in the router: your kubermaster server: 6443
       curl -sfL https://get.k3s.io | K3S_NODE_NAME=k3sBala-worker01 K3S_URL=https://<your_master_server_ip>:6443 K3S_TOKEN=<TOKEN> sh - 
              
 
+# Cheking
+
+       kubectl get nodes
+       
+       
 # setup kube before use jenkins
 
 
