@@ -15,16 +15,19 @@
 
 open port in router: yourkubermasterserverip:6443
 
-# Master
+# Connect to Master ( ControlPLane server
 
-      curl -sfL https://get.k3s.io | sh -
-      /var/lib/rancher/k3s/server/node-token
+      curl -sfL https://get.k3s.io | sh -s - --disable traefik --write-kubeconfig-mode 644 --node-name k3sBala-master
+      
+# Get the token
+
+      cat /var/lib/rancher/k3s/server/node-token
      
 # worker1-2:
 
 - Connect to worker ssh
 
-      curl -sfL https://get.k3s.io | K3S_URL=https://192.168.0.124:6443 K3S_TOKEN=youtokennumberhere sh -
+            curl -sfL https://get.k3s.io | K3S_URL=https://192.168.0.124:6443 K3S_TOKEN=youtokennumberhere sh -
 
 # setup kube before use jenkins
 
