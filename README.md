@@ -13,7 +13,7 @@
   
 # Setup router
 
-open port in router: yourkubermasterserverip:6443
+open a port in the router: your kubermaster server: 6443
 
 # Connect to Master ( ControlPLane server
 
