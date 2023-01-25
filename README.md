@@ -1,7 +1,10 @@
 # kubernetes k3s install with script:
 ( This work only master and your choose how many slave, it is work singel mode )
 
-- references: https://rancher.com/docs/k3s/latest/en/quick-start/
+- references: 
+- https://rancher.com/docs/k3s/latest/en/quick-start/
+- https://www.youtube.com/watch?v=1hwGdey7iUU
+- https://gitlab.com/cloud-versity/rancher-k3s-first-steps
 
 - connect to master ssh
 
