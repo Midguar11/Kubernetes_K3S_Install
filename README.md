@@ -18,7 +18,7 @@ open a port in the router: your kubermaster server: 6443
 
 # Connect to Master ( ControlPLane server )
 
-     curl -sfL https://get.k3s.io | sh -s - --disable traefik --write-kubeconfig-mode 644 --node-name k3sBala-master
+     curl -sfL https://get.k3s.io | sh -s - --write-kubeconfig-mode 644 --node-name k3sBala-master
       
 # Get the token
 
