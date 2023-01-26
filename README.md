@@ -40,7 +40,11 @@ open a port in the router: your kubermaster server: 6443
 
        kubectl get nodes
        
-       
+# Kubernetis Dashboard k3s
+
+      https://docs.k3s.io/installation/kube-dashboard
+
+
 # setup kube before use jenkins
 
 
@@ -52,8 +56,11 @@ open a port in the router: your kubermaster server: 6443
     kubectl create rolebinding jenkins-admin-binding --clusterrole=admin --serviceaccount=jenkins:jenkins --namespace=jenkins
     echo "K3S_KUBECONFIG_MODE=\"644\"" >> /etc/systemd/system/k3s.service.env
 
-#  Install Nginx
 
+
+#  Install Nginx
+ *if you disable treafik ingress controll
+ 
 - connect kube master
 
     kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.1/deploy/static/provider/cloud/deploy.yaml
