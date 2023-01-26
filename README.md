@@ -42,7 +42,7 @@ open a port in the router: your kubermaster server: 6443
        
 # Kubernetis Dashboard k3s
 
-      https://docs.k3s.io/installation/kube-dashboard
+https://docs.k3s.io/installation/kube-dashboard
 
 
 # setup kube before use jenkins
