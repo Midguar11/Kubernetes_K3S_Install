@@ -24,6 +24,11 @@ open a port in the router: your kubermaster server: 6443
      curl -sfL https://get.k3s.io | sh -s - --disable traefik --write-kubeconfig-mode 644 --node-name k3s-master-01
      
  *disable traefik integrated ingress controller
+ 
+ # Error handling k3s!!
+ 
+     export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+     kubectl config view --raw > ~/.kube/config
       
 # Get the token
 
