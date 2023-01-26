@@ -19,9 +19,11 @@
 
 open a port in the router: your kubermaster server: 6443
 
-# Connect to Master ( ControlPLane server ). disable traefik integrated ingress controller
+# Connect to Master ( ControlPLane server ). 
 
      curl -sfL https://get.k3s.io | sh -s - --disable traefik --write-kubeconfig-mode 644 --node-name k3s-master-01
+     
+ *disable traefik integrated ingress controller
       
 # Get the token
 
