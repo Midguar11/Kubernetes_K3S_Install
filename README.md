@@ -26,7 +26,8 @@ open a port in the router: your kubermaster server: 6443
  *disable traefik integrated ingress controller
  
  # Error handling k3s!!
- ( Error: Kubernetes cluster unreachable: Get "https://127.0.0.1:6443/version": x509: certificate signed by unknown authority )
+ *( Error: Kubernetes cluster unreachable: Get "https://127.0.0.1:6443/version": x509: certificate signed by unknown authority )
+ *Setup cunbconfig path
  
      export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
      kubectl config view --raw > ~/.kube/config
