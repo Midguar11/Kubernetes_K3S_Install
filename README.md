@@ -176,7 +176,7 @@ https://www.youtube.com/watch?v=1hwGdey7iUU
 
   restart
 
-# Firewall setup
+# Firewall setup Master and worker
 
 
     ufw allow 22/tcp && ufw allow 80/tcp && ufw allow 443/tcp && ufw allow 2376:2380/tcp && ufw allow 6443/tcp && ufw allow 8472/udp && ufw allow 9099/tcp && ufw allow 10250/tcp && ufw allow 10254/tcp && ufw allow 8472/udp && ufw allow 30000:32767/tcp && ufw allow 30000:32767/udp && ufw allow 9500/tcp && ufw allow 1883/tcp && ufw allow 15672/tcp
