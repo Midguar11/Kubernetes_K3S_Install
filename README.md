@@ -2,7 +2,7 @@
 
 ( Ez működik szóló módban is tehát, hogy csak egy Master van a Worker-ek számát te döntöd el. Ez a Kubernetes-nek egy könnyített verziója de rendelkezik minden fontosabb képességgel amivel egy k8s )
 
-# Előfeltételek
+# Szükséges környezet
 
 1 szerver Ubuntu Linux grafikus felülettel ( KubeMaster, control plane )
 1 szerver Ubuntu grafikus felület nélküli ( KubeWorker )
