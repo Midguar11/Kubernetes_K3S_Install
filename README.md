@@ -1,21 +1,38 @@
-# kubernetes k3s install with script:
-( This work only master and your choose how many slave, it is work singel mode )
+# kubernetes k3s telepítés
 
-- references: 
+( Ez müködik szoló modban is tehat, hogy csak egy Master van a Workerkek számá te döntöd el. Ez a kubernetesnek egy könnyitet verziója de rendelkezik minden fontosabb képességel amivel egy k8s )
+
+# Referenciák:
+ 
 - https://rancher.com/docs/k3s/latest/en/quick-start/
 - https://www.youtube.com/watch?v=1hwGdey7iUU
 - https://gitlab.com/cloud-versity/rancher-k3s-first-steps
 
-- connect to master ssh
+# Előfeltételek
+
+1 szerver Ubuntu Linux grafikus felülettel ( KubeMaster, control plane )
+1 szerver Ubuntu grafikus felület nélküli ( KubeWorker )
+ 
+# Csatlakozz a kube masterhez akár SSH val is, legjobb ha Routkent adod ki ezeket a parancsokat
 
       sudo apt-get update 
+      sudo apt-get upgrade
       sudo apt-get install -y apt-transport-https
       sudo apt install docker.io
       sudo systemctl start docker
       sudo systemctl enable docker
       sudo apt-get install -y curl
+      sudo apt install xrdp -y
+      sudo systemctl status xrdp
+      sudo systemctl start xrdp
+      
   
-# Setup router
+# Állítsd be a tüzfalat
+
+      ufw enable
+      ufw allow 22/tcp && ufw allow 80/tcp && ufw allow 443/tcp && ufw allow 2376:2380/tcp && ufw allow 6443/tcp && ufw allow 8472/udp && ufw allow 9099/tcp && ufw allow 10250/tcp && ufw allow 10254/tcp && ufw allow 8472/udp && ufw allow 30000:32767/tcp && ufw allow 30000:32767/udp && ufw allow 9500/tcp && ufw allow 1883/tcp && ufw allow 15672/tcp
+
+
 
 open a port in the router: your kubermaster server: 6443
 
