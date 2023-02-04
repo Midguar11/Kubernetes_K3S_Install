@@ -75,7 +75,8 @@ Ez működik szóló módban is tehát, hogy csak egy Master van a Worker-ek sz�
  A Lens egy olyan vezérlő és áttekintő felület ahol a kubernetes clustereidet rendszerben tudod kezelni és az áttekintést, karbantartást, modosításokat, hibakeresést, egyszerűvé és könnyebbé teszi. Szószerint napokat takarithatsz meg vele. Az egyik legjobb Kubernetes kezelő a piacon 
 Innen lehet letölteni, mivel ez egy asztali alkalmazás válaszd ki a neked megfelelő op rendszert. https://k8slens.dev/  
 Telepítás után a cluster hozzadásánál találsz egy részt ahol yamlként tudod hozzáadni a clustered configját, ide másold be a fent leírt módon elmentett config text file-d tatalmát és a benne lévő IP-címet cseréld le a master géped IP-jére. Ha elmented és jól csináltad már csak csatlakoznod kell.
-      
+
+# Ingress Telepites lasd kulon ( Traefik )
 
 
 # Referenciák:
