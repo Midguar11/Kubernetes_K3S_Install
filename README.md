@@ -1,13 +1,13 @@
 # Kubernetes K3S telepítés
 
-( Ez müködik szoló modban is tehat, hogy csak egy Master van a Workerkek számá te döntöd el. Ez a kubernetesnek egy könnyitet verziója de rendelkezik minden fontosabb képességel amivel egy k8s )
+( Ez működik szóló módban is tehát, hogy csak egy Master van a Worker-ek számát te döntöd el. Ez a Kubernetes-nek egy könnyített verziója de rendelkezik minden fontosabb képességgel amivel egy k8s )
 
 # Előfeltételek
 
 1 szerver Ubuntu Linux grafikus felülettel ( KubeMaster, control plane )
 1 szerver Ubuntu grafikus felület nélküli ( KubeWorker )
 
-# Csatlakozz a kube masterhez akár SSH val is, legjobb ha Routkent adod ki ezeket a parancsokat
+# Csatlakozz a kube masterhez akár SSH val is, legjobb ha Root-ként adod ki ezeket a parancsokat
 
       sudo apt-get update 
       sudo apt-get upgrade
