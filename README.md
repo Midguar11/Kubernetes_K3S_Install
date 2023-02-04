@@ -9,16 +9,19 @@ Ez működik szóló módban is tehát, hogy csak egy Master van a Worker-ek sz�
 
 # Csatlakozz a kube masterhez akár SSH-val is, válts át root-ra
 
-      sudo apt-get update 
-      sudo apt-get upgrade
-      sudo apt-get install -y apt-transport-https
-      sudo apt install docker.io
-      sudo systemctl start docker
-      sudo systemctl enable docker
-      sudo apt-get install -y curl
-      sudo apt install xrdp -y
-      sudo systemctl status xrdp
-      sudo systemctl start xrdp
+      apt-get update 
+      apt-get upgrade
+      apt-get install -y apt-transport-https
+      apt install docker.io
+      systemctl start docker
+      systemctl enable docker
+      apt-get install -y curl
+      apt install xrdp -y
+      systemctl status xrdp
+      systemctl start xrdp
+      curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+      chmod 700 get_helm.sh
+      ./get_helm.sh
    
   Telepítetted az xrdp most már a gép távasztallal elérhető, Windowsról. 
   
