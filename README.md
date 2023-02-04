@@ -19,7 +19,8 @@ Ez működik szóló módban is tehát, hogy csak egy Master van a Worker-ek sz�
       sudo apt install xrdp -y
       sudo systemctl status xrdp
       sudo systemctl start xrdp
-      
+   
+  Telepítetted az xrdp most már a gép távasztallal elérhető, Windowsról. 
   
 # Állítsd be a tűzfalat
 
