@@ -7,7 +7,7 @@
 1 szerver Ubuntu Linux grafikus felülettel ( KubeMaster, control plane )
 1 szerver Ubuntu grafikus felület nélküli ( KubeWorker )
 
-# Csatlakozz a kube masterhez akár SSH val is, legjobb ha Root-ként adod ki ezeket a parancsokat
+# Csatlakozz a kube masterhez akár SSH-val is, válts át root-ra
 
       sudo apt-get update 
       sudo apt-get upgrade
@@ -28,7 +28,8 @@
       
       
 
-# Ha nem a traefikot akarod Ingress vezérlőnek hanem mást akkor rakd bele ezt a parancsba "--disable traefik"
+# Telepítd a kubernetest
+ Ha nem a traefikot akarod Ingress vezérlőnek hanem mást akkor rakd bele ezt a parancsba "--disable traefik"
 
      curl -sfL https://get.k3s.io | sh -s - --write-kubeconfig-mode 644 --node-name KornyezetKubeMaster01
      
@@ -38,15 +39,15 @@
      kubectl config view --raw > ~/.kube/config
    
 # Lens használata
- Amennyiben lenszet használsz majd a kezeléshez akkor kréd le a config tartalmát arra majd szükséged lesz. Azt masold ki magadnak egy text file-ba
+ Amennyiben Lense-t használsz majd a kezeléshez akkor kérd le a config tartalmát arra majd szükséged lesz. Azt másold ki magadnak egy text file-ba
  
     cat /etc/rancher/k3s/k3s.yaml
     
-# Ellnörizd a Cluster állapotát
+# Ellenőrizd a cluster állapotát
 
     kubectl get nodes
    
-# kérdi ki a kubemaster tokent
+# Kérd le a kubemaster tokent
 
      cat /var/lib/rancher/k3s/server/node-token
      
@@ -63,7 +64,7 @@
       ufw enable
       ufw allow 22/tcp && ufw allow 80/tcp && ufw allow 443/tcp && ufw allow 2376:2380/tcp && ufw allow 6443/tcp && ufw allow 8472/udp && ufw allow 9099/tcp && ufw allow 10250/tcp && ufw allow 10254/tcp && ufw allow 8472/udp && ufw allow 30000:32767/tcp && ufw allow 30000:32767/udp && ufw allow 9500/tcp && ufw allow 1883/tcp && ufw allow 15672/tcp
 
-# Ellnörizd a Cluster állapotát
+# Ellnőrizd a Cluster állapotát
 
     kubectl get nodes
     
