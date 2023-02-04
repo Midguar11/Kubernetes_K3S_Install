@@ -1,6 +1,6 @@
 # Kubernetes K3S telepítés
 
-( Ez működik szóló módban is tehát, hogy csak egy Master van a Worker-ek számát te döntöd el. Ez a Kubernetes-nek egy könnyített verziója de rendelkezik minden fontosabb képességgel amivel egy k8s )
+Ez működik szóló módban is tehát, hogy csak egy Master van a Worker-ek számát te döntöd el. A K3S a Kubernetes-nek egy könnyített verziója de rendelkezik minden fontosabb képességgel amivel egy k8s
 
 # Szükséges környezet
 
