@@ -33,7 +33,7 @@ Ez működik szóló módban is tehát, hogy csak egy Master van a Worker-ek sz�
       
       
 
-# Telepítd a kubernetest
+# Telepítsd a kubernetest
  Ha nem a traefikot akarod Ingress vezérlőnek hanem mást akkor rakd bele ezt a parancsba "--disable traefik"
 
      curl -sfL https://get.k3s.io | sh -s - --write-kubeconfig-mode 644 --node-name KornyezetKubeMaster01
